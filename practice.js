@@ -141,3 +141,25 @@ for (const [team, odd] of Object.entries(game.odds)) {
     const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
     console.log(`Odd of ${teamStr} ${odd}`);
   }
+
+  console.log('maakai prince'.toUpperCase())
+
+  const capNames = function(name){
+    
+    //convert to arrays
+    const names = name.split()
+    
+    const upperCaseArray = []
+
+    for( const n of names ){
+      //upperCaseArray.push(n[0].toUpperCase() + n.slice(1))
+
+      upperCaseArray.push(n.replace(n[0], n[0].toUpperCase()))
+
+      console.log(upperCaseArray.join(''))
+    }
+
+  }
+
+  capNames('udokafm')
+  capNames('prince maakai')
