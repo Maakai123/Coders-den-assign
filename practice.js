@@ -153,6 +153,7 @@ for (const [team, odd] of Object.entries(game.odds)) {
 
     for( const n of names ){
       //upperCaseArray.push(n[0].toUpperCase() + n.slice(1))
+      console.log(n)
 
       upperCaseArray.push(n.replace(n[0], n[0].toUpperCase()))
 
@@ -163,3 +164,18 @@ for (const [team, odd] of Object.entries(game.odds)) {
 
   capNames('udokafm')
   capNames('prince maakai')
+
+
+  //More on functions
+
+  const airPeace = {
+    airline: 'airPeace',
+    code : 'LH',
+    bookings:[],
+
+    book(flightNum, name){
+      console.log(`${name} booked a seat on ${this.airline} flight with code ${this.code}${flightNum}`)
+    }
+  }
+
+  airPeace.book(236, 'maakai, princewill')
